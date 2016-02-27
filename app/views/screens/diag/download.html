@@ -1,0 +1,41 @@
+<section class="text-center">
+  <h4>Simulations</h4>
+  <a href="#/loading" class="btn btn-md btn-primary">Booting</a>
+  <a href="#/emulator" class="btn btn-md btn-primary">Authorized</a>
+  <a href="#/bricked" class="btn btn-md btn-primary">Deauthorized</a>
+  <a href="#/diagnostics" class="btn btn-md btn-primary disabled">Diagnostics</a>
+   <p class="advisory text-info">
+    This menu can be accessed by holding the 'INFO' button for 5 seconds.
+  </p>
+</section>
+
+<section class="diagnostics">
+  <div class="tv">
+    <div class="screen">
+      <!-- Image dimensions 800x450 -->
+      <img src="/images/screens/diag/tech-menu-download-opt.png" alt="TV Screen" />
+      <img class="remote" src="/images/remote.png" alt="DTA Remote" usemap="#download" />
+      
+      <map name="download" id="download">
+        <!-- Up Arrow -->
+        <area alt="Up Arrow" title="Up Arrow" href="#/objects" shape="rect" coords="54,147,75,168" />
+        <!-- Left Arrow -->
+        <area alt="Left Arrow" title="Left Arrow" shape="rect" coords="25,175,45,196" />
+        <!-- Down Arrow -->
+        <area alt="Down Arrow" title="Down Arrow" href="#/hdmi" shape="rect" coords="54,203,75,223" />
+        <!-- Right Arrow -->
+        <area alt="Right Arrow" title="Right Arrow" shape="rect" coords="85,175,105,196" />
+        <!-- Select Button  -->
+        <area alt="Enter Button" title="Enter Button" href="#/download-menu" shape="rect" coords="53,176,76,195" />
+        <!-- Menu Button  -->
+        <area alt="Menu Button" title="Menu Button" shape="rect" coords="19,147,42,166" />
+        <!-- Info Button  -->
+        <area alt="Info Button" title="Info Button" href="#/diagnostics" shape="rect" coords="19,123,42,141" />
+        <!-- Last Button  -->
+        <area alt="Last Button" title="Last Button" shape="rect" coords="86,121,108,141" />
+        <!-- Exit Button  -->
+        <area alt="Exit Button" title="Exit Button" href="#/emulator" shape="rect" coords="19,207,42,224" />
+      </map>
+    </div>
+  </div>
+</section><!-- /section -->

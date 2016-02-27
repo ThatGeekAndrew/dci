@@ -1,0 +1,41 @@
+<div class="text-center">
+  <h4>Simulations</h4>
+  <a href="#/loading" class="btn btn-md btn-primary">Booting</a>
+  <a href="#/emulator" class="btn btn-md btn-primary disabled">Authorized</a>
+  <a href="#/bricked" class="btn btn-md btn-primary">Deauthorized</a>
+  <a href="#/diagnostics" class="btn btn-md btn-primary">Diagnostics</a>
+  <p class="advisory text-success">
+    Welcome to the emulator! Have a look around.
+  </p>
+</div>
+
+<section class="emulator">
+  <div class="tv">
+    <div class="screen">
+      <!-- Image dimensions 800x450 -->
+      <video height="450" width="800" src="/video/app.mp4" alt="TV Screen" muted autoplay />
+      <img class="remote" src="/images/remote.png" alt="DTA Remote" usemap="#on" />
+      
+      <map name="on" id="on">
+        <!-- Up Arrow -->
+        <area alt="Up Arrow" title="Up Arrow" href="#/chanup" shape="rect" coords="54,147,75,168" />
+        <!-- Left Arrow -->
+        <area alt="Left Arrow" title="Left Arrow" shape="rect" coords="25,175,45,196" />
+        <!-- Down Arrow -->
+        <area alt="Down Arrow" title="Down Arrow" href="#/chandwn" shape="rect" coords="54,203,75,223" />
+        <!-- Right Arrow -->
+        <area alt="Right Arrow" title="Right Arrow" shape="rect" coords="85,175,105,196" />
+        <!-- Select Button  -->
+        <area alt="Enter Button" title="Enter Button" shape="rect" coords="53,176,76,195" />
+        <!-- Menu Button  -->
+        <area alt="Menu Button" title="Menu Button" href="#/mainmenu" shape="rect" coords="19,147,42,166" />
+        <!-- Info Button  -->
+        <area alt="Info Button" title="Info Button" href="#/diagnostics" shape="rect" coords="19,123,42,141" />
+        <!-- Last Button  -->
+        <area alt="Last Button" title="Last Button" shape="rect" coords="86,121,108,141" />
+        <!-- Exit Button  -->
+        <area alt="Exit Button" title="Exit Button" shape="rect" coords="19,207,42,224" />
+      </map>
+    </div>
+  </div>
+</section><!-- /section -->

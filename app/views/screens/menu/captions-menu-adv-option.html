@@ -1,0 +1,41 @@
+<section class="text-center">
+  <h4>Simulations</h4>
+  <a href="#/loading" class="btn btn-md btn-primary">Booting</a>
+  <a href="#/emulator" class="btn btn-md btn-primary disabled">Authorized</a>
+  <a href="#/bricked" class="btn btn-md btn-primary">Deauthorized</a>
+  <a href="#/diagnostics" class="btn btn-md btn-primary">Diagnostics</a>
+  <p class="advisory text-success">
+    Use the 'UP' and 'DOWN' arrow buttons to navigate this menu. Press 'ENTER' to make your selection.
+  </p>
+</section>
+
+<section class="emulator">
+  <div class="tv">
+    <div class="screen">
+      <!-- Image dimensions 800x450 -->
+      <img src="/images/screens/menus/menu-captions-adv-list.png" alt="TV Screen" />
+      <img class="remote" src="/images/remote.png" alt="DTA Remote" usemap="#adv-caption" />
+      
+      <map name="adv-caption" id="adv-caption">
+        <!-- Up Arrow -->
+        <area alt="Up Arrow" title="Up Arrow" shape="rect" coords="54,147,75,168" />
+        <!-- Left Arrow -->
+        <area alt="Left Arrow" title="Left Arrow" shape="rect" coords="25,175,45,196" />
+        <!-- Down Arrow -->
+        <area alt="Down Arrow" title="Down Arrow" shape="rect" coords="55,203,75,223" />
+        <!-- Right Arrow -->
+        <area alt="Right Arrow" title="Right Arrow" shape="rect" coords="84,175,105,196" />
+        <!-- Select Button  -->
+        <area alt="Select Button" title="Select Button" shape="rect" coords="53,176,75,195" />
+        <!-- Menu Button  -->
+        <area alt="Menu Button" title="Menu Button" href="#/captions-menu-adv" shape="rect" coords="19,147,42,166" />
+        <!-- Info Button  -->
+        <area alt="Info Button" title="Info Button" shape="rect" coords="20,123,40,141" />
+        <!-- Last Button  -->
+        <area alt="Last Button" title="Last Button" shape="rect" coords="86,121,108,141" />
+        <!-- Exit Button  -->
+        <area alt="Exit Button" title="Exit Button" href="#/emulator" shape="rect" coords="20,207,41,224" />
+      </map>
+    </div>
+  </div>
+</section><!-- /section -->

@@ -1,0 +1,28 @@
+<div class="text-center">
+  <h4>Simulations</h4>
+  <a href="#/loading" class="btn btn-md btn-primary disabled">Booting</a>
+  <a href="#/emulator" class="btn btn-md btn-primary">Authorized</a>
+  <a href="#/bricked" class="btn btn-md btn-primary">Deauthorized</a>
+  <a href="#/diagnostics" class="btn btn-md btn-primary">Diagnostics</a>
+  <p class="advisory text-info">
+    This can take as long as 15 minutes so long as everything is correct.
+  </p>
+</div>
+
+<section class="loading">
+  <div class="tv">
+    <div class="screen">
+      <!-- Image dimensions 800x450 -->
+      <img src="/images/screens/long-load.gif" alt="TV Screen" />
+    </div>
+  </div>
+</section><!-- /section -->
+
+<script>
+  $(document).ready(function () {
+    // Handler for .ready() called.
+    window.setTimeout(function () {
+        location.href = "#/emulator";
+    }, 8300);
+  });
+</script>
