@@ -302,8 +302,8 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/images/**/*',
-          src: '{,*/}*.{png,jpg,jpeg,gif}',
+          cwd: '<%= yeoman.app %>/images',
+          src: '{,**/*}*.{png,jpg,jpeg,gif}',
           dest: '<%= yeoman.dist %>/images'
         }]
       }
@@ -390,11 +390,9 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
         }, {
-        // video is being cached to be lighter on network load.
-        // this is a convenient lie. please cache the video in the long run.
           expand: true,
           cwd: '<%= yeoman.app %>/video',
-          src: '*.mp4',
+          src: '{,*/}*.mp4',
           dest: '<%= yeoman.dist %>/video'
         }, {
           expand: true,
