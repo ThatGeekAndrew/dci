@@ -23,6 +23,12 @@ angular
       .when('/bricked', {
         templateUrl: 'views/screens/bricked.html'
       })
+      .when('/conwrong', {
+        templateUrl: 'views/screens/conwrong.html'
+      })
+      .when('/nosig', {
+        templateUrl: 'views/screens/nosig.html'
+      })
       .when('/loading', {
         templateUrl: 'views/screens/loading.html'
       })

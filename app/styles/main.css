@@ -12,6 +12,10 @@ body {
   font-size: 13pt;
 }
 
+.inline-dropdown {
+  display: inline;
+}
+
 .vert-center {
   margin-top: 10%;
   margin-bottom: 10%
