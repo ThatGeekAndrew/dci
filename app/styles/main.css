@@ -31,12 +31,6 @@ body {
   transition: color 0.1s;
 }
 
-.navbar-brand:hover .no2,
-.navbar-brand:active .no2,
-.navbar-brand:focus .no2 {
-  color: white;
-} 
-
 .title {
   font-family: 'Russo One', sans-serif;
 }
@@ -75,6 +69,6 @@ body {
   cursor: default;
 }
 
-.question {
-  font-weight: bold;
+.twire {
+  color: #fff;
 }
