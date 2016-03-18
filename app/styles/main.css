@@ -17,8 +17,8 @@ body {
 }
 
 .vert-center {
-  margin-top: 10%;
-  margin-bottom: 10%
+  margin-top: 5%;
+  margin-bottom: 5%
 }
 
 .main p {
@@ -74,7 +74,7 @@ body {
 }
 
 .popover {
-  min-width: 220px;
+  min-width: 200px;
 }
 
 .rotate-90 {
@@ -83,7 +83,7 @@ body {
 }
 
 .advisory {
-  width: 70%;
+  width: 80%;
   margin: 0px auto;
   margin-top: 15px;
   text-shadow: 1px 1px 1px #333;
