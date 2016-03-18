@@ -72,3 +72,19 @@ body {
 .twire {
   color: #fff;
 }
+
+.popover {
+  min-width: 220px;
+}
+
+.rotate-90 {
+  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+}
+
+.advisory {
+  width: 70%;
+  margin: 0px auto;
+  margin-top: 15px;
+  text-shadow: 1px 1px 1px #333;
+}

@@ -14,9 +14,9 @@
       <li><a href="#/nosig">No Signal</a></li>
     </ul>
   </div>
-  <p class="advisory text-success">
-    twc.com/onholdhits
-  </p>
+  <div class="advisory alert alert-success">
+    <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> www.twc.com/onholdhits
+  </div>
 </div>
 
 <section class="chandwn">
@@ -24,7 +24,7 @@
     <div class="screen">
       <!-- Image dimensions 800x450 -->
       <video height="450" width="800" src="/video/hold.mp4" alt="TV Screen" muted autoplay></video>
-      <img class="remote" src="/images/default-remote.png" alt="DTA Remote" usemap="#chdwn" />
+      <img src="/images/default-remote.png" alt="DTA Remote" usemap="#chdwn" class="remote has-popover" data-title="DTA Remote" data-content="Use this to control your TV! Pertinent buttons will be highlighted for you." data-placement="right" data-toggle="popover" data-trigger="hover" />
       
       <map name="chdwn" id="chdwn">
         <!-- Up Arrow -->
@@ -39,3 +39,12 @@
     </div>
   </div>
 </section><!-- /section -->
+
+<script>
+  $("[data-toggle=popover]").popover({
+    html: true, 
+    content: function() {
+      return $('#popover-content').html();
+    }
+  });
+</script>

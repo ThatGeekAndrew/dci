@@ -14,9 +14,10 @@
       <li><a href="#/nosig">No Signal</a></li>
     </ul>
   </div>
-   <p class="advisory text-info">
+  <div class="advisory alert alert-danger">
+    <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 
     The DTA diagnostic menu can be accessed by holding the 'INFO' button for 5 seconds.
-  </p>
+  </div>
 </section>
 
 <section class="diagnostics">
@@ -24,7 +25,7 @@
     <div class="screen">
       <!-- Image dimensions 800x450 -->
       <img src="/images/screens/diag/tech-menu.png" alt="TV Screen" />
-      <img class="remote" src="/images/diag-remote.png" alt="DTA Remote" usemap="#diag" />
+      <img src="/images/diag-remote.png" alt="DTA Remote" usemap="#diag" class="remote has-popover" data-title="DTA Remote" data-content="Use this to control your TV! Pertinent buttons will be highlighted for you." data-placement="right" data-toggle="popover" data-trigger="hover" />
       
       <map name="diag" id="diag">
         <!-- Seven Button -->
@@ -43,3 +44,12 @@
     </div>
   </div>
 </section><!-- /section -->
+
+<script>
+  $("[data-toggle=popover]").popover({
+    html: true, 
+    content: function() {
+      return $('#popover-content').html();
+    }
+  });
+</script>

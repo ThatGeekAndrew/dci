@@ -14,9 +14,10 @@
       <li><a href="#/nosig">No Signal</a></li>
     </ul>
   </div>
-  <p class="advisory text-success">
+  <div class="advisory alert alert-success">
+    <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 
     Use the 'UP' and 'DOWN' arrow buttons to navigate this menu. Press 'ENTER' to make your selection.
-  </p>
+  </div>
 </section>
 
 <section class="emulator">
@@ -24,7 +25,7 @@
     <div class="screen">
       <!-- Image dimensions 800x450 -->
       <img src="/images/screens/menus/menu-channels.png" alt="TV Screen" />
-      <img class="remote" src="/images/menu-remote.png" alt="DTA Remote" usemap="#mainmenu" />
+      <img src="/images/menu-remote.png" alt="DTA Remote" usemap="#mainmenu" class="remote has-popover" data-title="DTA Remote" data-content="Use this to control your TV! Pertinent buttons will be highlighted for you." data-placement="right" data-toggle="popover" data-trigger="hover" />
       
       <map name="mainmenu" id="mainmenu">
         <!-- Up Arrow -->
@@ -43,3 +44,12 @@
     </div>
   </div>
 </section><!-- /section -->
+
+<script>
+  $("[data-toggle=popover]").popover({
+    html: true, 
+    content: function() {
+      return $('#popover-content').html();
+    }
+  });
+</script>
