@@ -35,11 +35,8 @@ angular
       
     /* Channels */
 
-      .when('/chanup', {
-        templateUrl: 'views/screens/chanup.html'
-      })
-      .when('/chandwn', {
-        templateUrl: 'views/screens/chandwn.html'
+      .when('/commercial', {
+        templateUrl: 'views/screens/commercial.html'
       })
 
     /* Regular menu options */
