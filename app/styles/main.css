@@ -77,7 +77,7 @@ body {
   min-width: 200px;
 }
 
-.rotate-90 {
+.rotate-remote {
   -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
     transform: rotate(7deg);
 }
@@ -87,4 +87,21 @@ body {
   margin: 0px auto;
   margin-top: 15px;
   text-shadow: 1px 1px 1px #333;
+}
+
+.about {
+  text-align: center;
+}
+
+.about ul {
+  list-style-type: none;
+}
+
+.feedback {
+  padding: 25px 0px;
+}
+
+.feedback button,
+.feedback label {
+  margin-top: 15px;
 }

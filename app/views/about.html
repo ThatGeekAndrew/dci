@@ -1,0 +1,41 @@
+<section class="about">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<h1 class="title">Feedback</h1>
+			<p>We appreciate any and all feedback. We want to know if something's incorrect, broken, can be done better or improved. For now, send us regular email!</p>
+
+			<form class="feedback">
+				<label for="subject">Feedback Subject</label>
+				<select name="subject" id="subject" class="form-control">
+				  <option>Bug/Glitch</option>
+				  <option>Comments</option>
+				  <option>Suggestions</option>
+				  <option>Other</option>
+				</select>
+
+				<label for="body">Feedback</label>
+				<textarea name="body" id="body" class="form-control" type="text" placeholder="Give us your feedback!" max="1000" required></textarea>
+
+				<button class="btn btn-block btn-primary" onclick="sendMail(); return false">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	<h2 class="title">Credit:</h2>
+	<ul>
+		<li><strong>Developer:</strong> Andrew Alsante</li>
+		<li><strong>Project Manager:</strong> Dezsi Laczo</li>
+		<li><strong>Feedback:</strong> Albany Tier 3, Tier 1</li>
+	</ul>
+</section>
+
+<script>
+	function sendMail() {
+	    var link = "mailto:andrewalsante@gmail.com"
+	             + "?cc=andrew.alsante@twcable.com"
+	             + "&subject=" + encodeURI(document.getElementById('subject').value)
+	             + "&body=" + encodeURI(document.getElementById('body').value);
+
+	    window.location.href = link;
+	}
+</script>

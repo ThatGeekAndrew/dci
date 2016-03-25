@@ -8,6 +8,7 @@
  *
  * Main module of the application.
  */
+
 angular
   .module('dciApp', [
     'ngRoute'
@@ -16,6 +17,9 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html'
+      })
+      .when('/about', {
+        templateUrl: 'views/about.html'
       })
       .when('/emulator', {
         templateUrl: 'views/emulator.html'
@@ -230,3 +234,4 @@ angular
         redirectTo: '/emulator'
       });
   });
+
