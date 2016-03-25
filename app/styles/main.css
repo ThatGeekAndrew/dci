@@ -100,8 +100,3 @@ body {
 .feedback {
   padding: 25px 0px;
 }
-
-.feedback button,
-.feedback label {
-  margin-top: 15px;
-}
